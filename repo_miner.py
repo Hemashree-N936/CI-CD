@@ -37,7 +37,7 @@ def save_to_csv(df, filename="commit_history.csv"):
     print(f"✅ Saved {len(df)} commits to {filename}")
 
 if __name__ == "__main__":
-    repo_url = "https://github.com/tensorflow/tensorflow.git"
+    repo_url = "https://github.com/psf/requests.git"
 
     repo = clone_or_open_repo(repo_url)
     df = extract_commits(repo, max_count=200)
